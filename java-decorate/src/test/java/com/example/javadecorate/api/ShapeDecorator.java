@@ -13,7 +13,9 @@ public abstract class ShapeDecorator implements Shape {
     public ShapeDecorator(Shape decoratedShape){
         this.decoratedShape = decoratedShape;
     }
+    public ShapeDecorator(){
 
+    }
     public void draw(){
         decoratedShape.draw();
     }
